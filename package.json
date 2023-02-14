@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browser": {
+    "[module-name]": false
+  },
   "scripts": {
     "build-webpack": "webpack --config webpack.config.ts",
     "start": "webpack serve --env port=3888 mode=development",

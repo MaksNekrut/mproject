@@ -8,7 +8,9 @@ export function classNames(cls: string, mods: Mods = {}, additional: string[] = 
 			.filter(([_,value]) => !!value)
 			.map(([classNames]) => classNames)
 	]
-		.join(" ");
+		.join(" ")
+		.replace(",", " ")
+		.trim();
 }
 
 classNames("remove-btn", { hovered: true, selectable: true, red: false}, ["pdg"]);
